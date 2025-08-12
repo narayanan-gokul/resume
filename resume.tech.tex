@@ -1,92 +1,113 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-
-\moderncvstyle{banking}
-\moderncvcolor{black}
-\nopagenumbers{}
-\usepackage[utf8]{inputenc}
-\usepackage{ragged2e}
-\usepackage[scale=0.915]{geometry}
-\usepackage{import}
-\usepackage{multicol}
-\usepackage{import}
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=0.6in]{geometry}
 \usepackage{enumitem}
-\usepackage[utf8]{inputenc}
-\usepackage{amssymb}
-\name{Gokul}{Narayanan}
-\newcommand*{\customcventry}[7][.13em]{
-\begin{tabular}{@{}l}
-{\bfseries #4} \
-{\itshape #3}
-\end{tabular}
-\hfill
-\begin{tabular}{l@{}}
-{\bfseries #5} \
-{\itshape #2}
-\end{tabular}
-\ifx&#7&%
-\else{\
-\begin{minipage}{\maincolumnwidth}%
-\small#7%
-\end{minipage}}\fi%
-\par\addvspace{#1}}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{array}
+\usepackage{tabularx}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
 \begin{document}
-\makecvtitle
-\vspace*{-16mm}
-\begin{center}\textbf{Software engineer}\end{center}
-\begin{center}
-\begin{tabular}{ c c c }
-\faMobile\enspace +91 7304225266 & \enspace gokul.narayanan@pm.me & \faHome\enspace Kannur, Kerala\\
-\faLinkedin\enspace \color{blue} \href{https://www.linkedin.com/in/gokul-narayanan-5a7681210/}{in/gokul-narayanan } & \enspace &
-\faGithub\enspace \color{blue} \href{https://github.com/narayanan-gokul}{github.com/narayanan-gokul}
-\end{tabular}
-\end{center}
 
-\section{Profile}
-{Dedicated Software developer with an ability to work on well-defined objectives religiously and independently. Proficient at learning and honing new skills in the shortest time frame possible. Skilled at deep diving into, understanding, and implementing concepts.}
+\begin{tabularx}{\textwidth}{ll}
+	{\LARGE \textbf{Gokul Narayanan}} &
 
-\section{Professional Experience}
-\customcventry{07/2024 ‐ present}{{{(Freelance)}}}{Software Developer,}{Remote}{}{
-{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-\item Developed node.js scripts for fetching market data using websockets.
-\item Developing a web app with backend written in Golang and frontend in HTMX.
-\end{itemize}}}
+	\begin{tabular}{@{}ll}
+		\href{mailto:gokul.narayanan@pm.me}{gokul.narayanan@pm.me} & +61 402 185 159 \\
+		\href{https://github.com/narayanan-gokul}{github.com/narayanan-gokul} &
+	\href{https://www.linkedin.com/in/gokul-narayanan-5a7681210/}{linkedin.com/in/gokul-narayanan} \\
+	\end{tabular} \\
 
-\customcventry{05/2023 ‐ 05/2024}{{{(Codeinbound LLP)}}}{Software Development Engineer,}{Remote}{}{
-{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-\item Implemented user management functionality such as authorization for a network monitoring system.
-\item Developed an entire reporting module from the ground up, providing users with the ability to visualize their data immediately on request or have it sent to them periodically.
-\item Design of the reporting module allows data to be aggregated from any part of the application's dataset.
-\item Created SQL functions for custom aggregation of data based on the reporting requirements.
-\end{itemize}}}
+\end{tabularx}
 
-\customcventry{02/2023 ‐ 05/2023}{{{(Codeinbound LLP)}}}{Software Development Engineer Intern,}{Remote}{}{
-{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-\item Developed basic entities and their relations for multiple aspects of a network monitoring system.
-\item Created and tested more than 10 entities pertaining to various functionalities.
-\item Worked on creating and validating database migrations for above entities.
-\item Created URL route handlers for basic CRUD functionality of the application.
-\end{itemize}}}
+\vspace{0.5em}
+\rule{\textwidth}{2pt}
 
+Dedicated Software developer with an ability to work on well-defined objectives
+religiously and independently. Proficient at learning and honing new skills in
+the shortest time frame possible. Skilled at deep diving into, understanding,
+and implementing concepts.
 
+% Education
+\vspace{-0.5\baselineskip}
+\section*{Education}
+\hrule
 
-\section{Education}
-\customcventry{}{{Fr. C Rodrigues Institute of Technology}}{BE Electrical Engineering}{Vashi, Navi Mumbai}{}{}{}
+\textbf{University of Sydney}, NSW, Australia \hfill \textit{August 2025 -- Present} \\
+Master of Computer Science \\
 
-\section{Skills}
-{\begin{itemize}[label=\textbullet]
-\item {\textbf{Programming languages:} Javascript, Typescript, SQL, Java, Python, Golang}
-\item {\textbf{Frameworks and libraries:} NestJS, TypeORM, FastAPI. SQLAlchemy, Alembic, HTMX}
-\item {\textbf{Technologies:} Linux, Redis, Message queues, Puppeteer, Nodejs, PostgreSQL}
-\end{itemize}}
+\vspace{-1\baselineskip}
 
-\section{Projects}
-{
-\customcventry{}{{{}}}{Software suite for a vritual hardware platform called Hack}{}{}{
-(A part of the Nand2tetris course (part 1) offered by the Hebrew University of Jerusalem on Coursera)
-{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-\item Developed an assembler and a VM (Virtual Machine) translator in Java for the hack platform.
-\item The VM translator acts as a backend for the compiler for a basic object oriented language called 'Jack'.
-\item The translator converts instructions written in a VM language to assembly instructions that can be run on the hack platform.
-\end{itemize}}}
-}
+\textbf{Fr. C Rodrigues Institute of Technology}, Maharashtra, India
+\hfill \textit{May 2018 -- May 2022} \\
+Bachelor of Engineering, Electrical \\
+\vspace{-1.5\baselineskip}
+\begin{itemize}[topsep=0pt, itemsep=0pt, partopsep=0pt, label=--]
+	\item Designed and developed a small scale model of a train EMU with
+		locopilot cabin emulation.
+\end{itemize}
+
+% Experience
+\vspace{-0.5\baselineskip}
+\section*{Experience}
+\hrule
+
+\textbf{Freelance}, Remote, India \hfill Month Year -- Present \\
+\textit{Backend developer} \\
+\vspace{-1.5\baselineskip}
+\begin{itemize}[label=--]
+	\item Built the backend API and database integration for a website that
+	    serves historical location data.
+	\item Project uses Golang's standard router API.
+	\item Desgined SQL quieries for fetching data across the system for
+		report generation.
+\end{itemize}
+
+\textbf{Codeinbound LLP}, Remote, India \hfill Month Year -- Month Year \\
+\textit{Software Development Engineer} \\
+\vspace{-1.5\baselineskip}
+\begin{itemize}[label=--]
+	\item Owned the reporting feature of a network management platform.
+	\item Responsible for developing and maintaing the entire reporting pipeline.
+\end{itemize}
+
+\textbf{Codeinbound LLP}, Remote, India \hfill Month Year -- Month Year \\
+\textit{Software Development Engineer Intern} \\
+\vspace{-1.5\baselineskip}
+\begin{itemize}[label=--]
+	\item Developed and maintained user management feature.
+	\item Developed the authentication and authentication feature.
+	\item Responsible for designing and implementing database schemas for 
+		the entities of a network management platform.
+\end{itemize}
+
+% Projects
+\vspace{-0.5\baselineskip}
+\section*{Projects}
+\hrule
+\textbf{Project Name} — \href{https://github.com/projectlink}{GitHub Link} \\
+Brief description of the project, technologies used, and outcomes.
+
+% Skills
+\vspace{-0.5\baselineskip}
+\section*{Skills}
+\hrule
+Programming: Python, JavaScript, C++ \\
+Web: HTML, CSS, React, Node.js \\
+Tools: Git, Docker, VS Code
+
+% Languages
+\vspace{-0.5\baselineskip}
+\section*{Languages}
+\hrule
+English (Fluent), Tamil (Native), Hindi (Conversational)
+
+% Interests
+\vspace{-0.5\baselineskip}
+\section*{Interests}
+\hrule
+Open-source development, AI research, cycling
+
 \end{document}
